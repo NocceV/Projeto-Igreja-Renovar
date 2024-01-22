@@ -377,6 +377,10 @@ th {
         padding: 3px 10px;
     }
 
+
+
+    
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=PT+Sans:ital@1&family=Poppins:wght@300&family=Sigmar&family=Vina+Sans&display=swap');
@@ -392,19 +396,18 @@ footer {
     background-image: linear-gradient(to bottom, #070608, #06230d);
     position: relative;
     font-size: 0.8rem;
-    margin-top: 10%;
-    padding: 5%;
+    margin-top: 5%; /* Reduzi o espaçamento superior */
+    padding: 2%; /* Reduzi o preenchimento para torná-lo mais compacto */
 }
 
 .main {
-    /* padding: 20px; */
     display: grid;
-    gap: 55px;
-    grid-template-columns: 1fr;
+    gap: 20px; /* Reduzi o espaçamento entre as seções */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Permitir que as seções tenham no mínimo 250px e se ajustem automaticamente */
 }
 
 .row {
-    margin-top: 20px;
+    margin-top: 10px; /* Reduzi o espaçamento superior nas linhas */
 }
 
 .footer-header {
@@ -414,22 +417,20 @@ footer {
 }
 
 .footer-header h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.5rem; /* Reduzi o tamanho da fonte do cabeçalho */
+    margin-bottom: 10px; /* Reduzi o espaçamento inferior */
 }
 
 .contato {
-    margin-top: -30px;
-    font-size: 1.8em;
+    margin-top: -20px; /* Ajustei o espaçamento superior */
+    font-size: 1.5em;
 }
 
 .footer-links {
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduzi o espaçamento inferior nas links */
 }
 
 .office-des {
-    display: block;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -442,6 +443,9 @@ footer {
 .office a:hover {
     color: #06230d;
 }
+.link {
+    align-items: center; /* Centraliza os elementos na coluna */   
+}
 
 .link-des {
     display: flex;
@@ -451,10 +455,11 @@ footer {
 }
 
 .link-des a {
-    padding-top: 5%;
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+    margin-top: 15px;
+    width: 70%;
 }
 
 .link-des a:hover {
@@ -462,25 +467,15 @@ footer {
     transition: linear 0.3s;
 }
 
-.ri-arrow-right-line {
-    margin-left: 0;
-}
-
 .icons a {
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
     justify-content: center;
-    padding: 10px;
+    padding: 8px; /* Reduzi o preenchimento dos ícones */
     border-radius: 50%;
-    align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 2%;
-}
-
-.social-icon {
-    position: relative;
-    top: 2px;
 }
 
 .icons a:hover {
@@ -490,27 +485,21 @@ footer {
 }
 
 .newsletter-des {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 19px; /* Reduzi o espaçamento superior */
 }
-
-.icons {
-    display: flex;
-    gap: 10px;
-}
-
 
 .copyright-area {
     width: 100%;
     grid-column: 1/4;
+    margin-top: 20px;
 }
 
 .copyright-area p {
     width: 100%;
     grid-column: 1/4;
     text-align: center;
+    margin-top: 10px;
 }
+
