@@ -420,7 +420,7 @@ footer {
 
 }
 
-@media (min-width: 321px) and (max-width: 600px) {
+@media (min-width: 321px) and (max-width: 519px) {
 
     nav {
         height: 15vh;
