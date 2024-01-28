@@ -173,18 +173,21 @@ footer {
     background-image: linear-gradient(to bottom, #070608, #06230d);
     position: relative;
     font-size: 0.8rem;
-    margin-top: 5%; /* Reduzi o espaçamento superior */
-    padding: 2%; /* Reduzi o preenchimento para torná-lo mais compacto */
+    margin-top: 5%; 
+    padding: 2%; 
+
+    
 }
 
 .main {
     display: grid;
-    gap: 20px; /* Reduzi o espaçamento entre as seções */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Permitir que as seções tenham no mínimo 250px e se ajustem automaticamente */
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    height: 100%;
 }
 
 .row {
-    margin-top: 10px; /* Reduzi o espaçamento superior nas linhas */
+    margin-top: 10px; 
 }
 
 .footer-header {
@@ -194,17 +197,17 @@ footer {
 }
 
 .footer-header h3 {
-    font-size: 1.5rem; /* Reduzi o tamanho da fonte do cabeçalho */
-    margin-bottom: 10px; /* Reduzi o espaçamento inferior */
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
 }
 
 .contato {
-    margin-top: -20px; /* Ajustei o espaçamento superior */
+    margin-top: -20px; 
     font-size: 1.5em;
 }
 
 .footer-links {
-    margin-bottom: 5px; /* Reduzi o espaçamento inferior nas links */
+    margin-bottom: 5px; 
 }
 
 .office-des {
@@ -221,7 +224,7 @@ footer {
     color: #06230d;
 }
 .link {
-    align-items: center; /* Centraliza os elementos na coluna */   
+    align-items: center;   
 }
 
 .link-des {
@@ -249,7 +252,7 @@ footer {
     color: #fff;
     border: 1px solid #fff;
     justify-content: center;
-    padding: 8px; /* Reduzi o preenchimento dos ícones */
+    padding: 8px; 
     border-radius: 50%;
     font-size: 1rem;
     margin: 2%;
@@ -266,7 +269,7 @@ footer {
 .newsletter-des {
     align-items: center;
     text-align: center;
-    margin-top: 25px; /* Reduzi o espaçamento superior */
+    margin-top: 25px;
 }
 
 .icons{
@@ -365,57 +368,30 @@ footer {
 
     /*-----------footer querie------------*/
 
-    .footer-sec {
-        padding: 5px;
-    }
-
     .main {
-        grid-template-columns: 1fr; /* Uma coluna para dispositivos menores */
-    }
-
-    .footer-header h3 {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-    }
-
-    .contato {
-        margin-top: -15px;
-        font-size: 1.2em;
-    }
-
-    .icons a {
-        margin: 1%;
-    }
-
-    .newsletter-des {
-        margin-top: 10px;
-    }
-
-    .link-des a {
-        margin-top: 10px;
-        width: 80%;
-        font-size: 0.8rem;
-    }
-
-    .office-des img {
-        width: 80%; /* Ajuste a largura da imagem do QRCode */
-    }
-
-    table {
-        width: 90%;
-        margin: 10px 5px;
-    }
-
-    th,
-    td {
-        padding: 3px 10px;
-        font-size: x-small;
-    }
-
-    .titulo-horario h1 {
-        width: 90%;
-        font-size: x-small;
-    }
+        grid-template-columns: 1fr;
+      }
+    
+      .footer-header h3 {
+        font-size: 0.9rem;
+      }
+    
+      .footer-links, .link-des a {
+        font-size: 0.7rem;
+      }
+    
+      .icons a {
+        padding: 2px;
+        margin: 0.2%;
+        font-size: 0.6rem;
+      }
+      #qrcode {
+        width: 70px; 
+      }
+    
+      .row {
+        margin-top: 0;
+      }
 
 
 }
@@ -491,42 +467,37 @@ footer {
     }
 
     /*------------Footer queries ------------*/
-
-    .footer-sec {
-        padding: 5px;
-    }
-
     .main {
-        grid-template-columns: 1fr; /* Uma coluna para dispositivos menores */
-    }
-
-    .footer-header h3 {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-    }
-
-    .contato {
-        margin-top: -15px;
-        font-size: 1.2em;
-    }
-
-    .icons a {
-        margin: 1%;
-    }
-
-    .newsletter-des {
-        margin-top: 10px;
-    }
-
-    .link-des a {
-        margin-top: 10px;
-        width: 80%;
+        grid-template-columns: 1fr;
+      }
+    
+    
+      .footer-header h3 {
+        font-size: 1rem;
+      }
+    
+      .footer-links, .link-des a {
         font-size: 0.8rem;
-    }
-
-    .office-des img {
-        width: 50%; /* Ajuste a largura da imagem do QRCode */
-    }
+      }
+    
+      
+      .icons a {
+        padding: 4px;
+        margin: 0.5%;
+        font-size: 0.8rem;
+      }
+    
+      
+      #qrcode {
+        width: 80px; 
+      }
+    
+      
+      .row {
+        margin-top: 3px;
+      }
+    
+    
 
 }
 
@@ -602,38 +573,33 @@ footer {
 
     /*-----FooterQuerie-----*/
 
-    .footer-sec {
-        padding: 2%;
-    }
+    
 
     .main {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+        grid-template-columns: 1fr;
+      }
+    
+      .footer-header h3 {
+        font-size: 1.2rem;
+      }
+    
+      .footer-links, .link-des a {
+        font-size: 0.9rem;
+      }
+    
+      .row {
+        margin-top: 5px;
+      }
+    
+      .icons a {
+        padding: 6px;
+        margin: 1%;
+      }
 
-    .footer-header h3 {
-        font-size: 1.0rem;
-        margin-bottom: 8px;
-    }
-
-    .contato {
-        margin-top: -15px;
-        font-size: 1.2em;
-    }
-
-    .icons a {
-        margin: 3%;
-    }
-
-    .newsletter-des {
-        margin-top: 10px;
-    }
-
-    .link-des a {
-        margin-top: 10px;
-        width: 80%;
-        font-size: small;
-    }
-   
+      .footer-header{
+        width: 75px;
+      }
+    
 
     
 
