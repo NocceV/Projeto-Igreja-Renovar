@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -113,9 +114,12 @@ nav {
     padding-left: 100px;
 }
 
+/*------------------------------------------*/
 #tabela-horario {
     padding-left: 150px;
+    padding-bottom: 85px;
 }
+/*------------------------------------------*/
 
 
 table {
@@ -160,136 +164,161 @@ th {
 
 
 /*------------------------- Footer---------------------- */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=PT+Sans:ital@1&family=Poppins:wght@300&family=Sigmar&family=Vina+Sans&display=swap');
-
-#tagRodape {
-    width: 100%;
+footer{
+    font-family: 'inter',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-footer {
-    color: #fff;
-    background-image: linear-gradient(to bottom, #070608, #06230d);
-    position: relative;
-    font-size: 0.8rem;
-    margin-top: 5%; 
-    padding: 2%; 
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
 
+}
+
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+    border-top: 1px solid black;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75em;
+    color: #000;
+}
+#footer_contacts p{
+    color: #000;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius:50%;
+    transition: all 0.4s;
+}
+#footer_social_media .footer_link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer_link:hover{
+    
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992,#ff9807);
+}
+
+#facebook{
+    background: #4267b3;
+}
+
+#whatsapp{
+    background:#25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
     
 }
 
-.main {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    height: 100%;
+.footer-list .footer_link{
+    color: var(--color-neutral-0);
+    transition: all 0.4s;
+}
+.footer-list h3{
+    color: #0e0c0c;
 }
 
-.row {
-    margin-top: 10px; 
+.footer-list h3:hover{
+    color:rgb(16, 107, 16) ;
 }
 
-.footer-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-list a{
+    color: black;
 }
 
-.footer-header h3 {
-    font-size: 1.5rem; 
-    margin-bottom: 10px; 
-}
-
-.contato {
-    margin-top: -20px; 
-    font-size: 1.5em;
-}
-
-.footer-links {
-    margin-bottom: 5px; 
-}
-
-.office-des {
-    text-align: center;
-}
-
-.office a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
-}
-
-.office a:hover {
-    color: #06230d;
-}
-.link {
-    align-items: center;   
-}
-
-.link-des {
+#footer_subscribe{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 1.5rem;
 }
 
-.link-des a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    margin-top: 15px;
-    width: 70%;
+#footer_subscribe {
+    color: black;
 }
 
-.link-des a:hover {
-    color: #8de6a2;
-    transition: linear 0.3s;
-}
-
-.icons a {
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    justify-content: center;
-    padding: 8px; 
-    border-radius: 50%;
-    font-size: 1rem;
-    margin: 2%;
-    margin-left: 35px;
-    margin-right: 35px;
-}
-
-.icons a:hover {
-    color: #fff;
-    background-color: #06230d;
-    border-color: #06230d;
-}
-
-.newsletter-des {
+#input_group{
+    display: flex;
     align-items: center;
-    text-align: center;
-    margin-top: 25px;
+    background-color: black;
+    border-radius: 4px;
 }
 
-.icons{
-    margin-top: 35px;
-}
+#input_group input{
 
-
-
-.copyright-area {
+    all: unset;
+    padding: 0.75rem;
     width: 100%;
-    grid-column: 1/4;
-    margin-top: 20px;
+
 }
 
-.copyright-area p {
-    width: 100%;
-    grid-column: 1/4;
-    text-align: center;
-    margin-top: 10px;
+#input_group  button{
+    background-color: rgb(7, 104, 7);
+    border: none;
+    color: var(--color-neutral-40);
+    font-size: 1.125rem;
+    padding: 0px 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
 }
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    border-top:1px solid black;
+    background-color: white;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+
+}
+
 /*-----------------------Media Queries-----------------------*/
 
 @media (min-width: 200px) and (max-width: 320px) {
@@ -323,6 +352,7 @@ footer {
     .nav-list li {
         white-space: nowrap;
     }
+    
 
     /*---horario queries-----*/
 
@@ -368,30 +398,7 @@ footer {
 
     /*-----------footer querie------------*/
 
-    .main {
-        grid-template-columns: 1fr;
-      }
     
-      .footer-header h3 {
-        font-size: 0.9rem;
-      }
-    
-      .footer-links, .link-des a {
-        font-size: 0.7rem;
-      }
-    
-      .icons a {
-        padding: 2px;
-        margin: 0.2%;
-        font-size: 0.6rem;
-      }
-      #qrcode {
-        width: 70px; 
-      }
-    
-      .row {
-        margin-top: 0;
-      }
 
 
 }
@@ -467,35 +474,6 @@ footer {
     }
 
     /*------------Footer queries ------------*/
-    .main {
-        grid-template-columns: 1fr;
-      }
-    
-    
-      .footer-header h3 {
-        font-size: 1rem;
-      }
-    
-      .footer-links, .link-des a {
-        font-size: 0.8rem;
-      }
-    
-      
-      .icons a {
-        padding: 4px;
-        margin: 0.5%;
-        font-size: 0.8rem;
-      }
-    
-      
-      #qrcode {
-        width: 80px; 
-      }
-    
-      
-      .row {
-        margin-top: 3px;
-      }
     
     
 
@@ -575,30 +553,6 @@ footer {
 
     
 
-    .main {
-        grid-template-columns: 1fr;
-      }
-    
-      .footer-header h3 {
-        font-size: 1.2rem;
-      }
-    
-      .footer-links, .link-des a {
-        font-size: 0.9rem;
-      }
-    
-      .row {
-        margin-top: 5px;
-      }
-    
-      .icons a {
-        padding: 6px;
-        margin: 1%;
-      }
-
-      .footer-header{
-        width: 75px;
-      }
     
 
     

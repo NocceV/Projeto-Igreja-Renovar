@@ -96,147 +96,162 @@ body {
 
 /* RODAPE */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=PT+Sans:ital@1&family=Poppins:wght@300&family=Sigmar&family=Vina+Sans&display=swap');
-
-
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+*{
+  font-family: 'inter',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#tagRodape {
+:root{
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+
+}
+
+footer{
   width: 100%;
+  color: var(--color-neutral-40);
+  border-top: 1px solid black;
 }
 
-footer {
-  margin-top: 5%;
-  color: #fff;
-  background-image: linear-gradient(to bottom, #070608, #06230d);
-  position: relative;
-  font-size: 0.8rem;
+.footer_link{
+  text-decoration: none;
 }
 
-.main {
-  /* padding: 20px; */
+#footer_content{
+  background-color: white;
   display: grid;
-  gap: 55px;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4,1fr);
+  padding: 3rem 3.5rem;
+
+
 }
 
-.row {
-  margin-top: 20px;
+#footer_contacts h1{
+  margin-bottom: 0.75em;
+  color: #000;
+}
+#footer_contacts p{
+  color: #000;
 }
 
-.footer-header {
+#footer_social_media{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius:50%;
+  transition: all 0.4s;
+}
+#footer_social_media .footer_link i{
+  font-size: 1.25rem;
+}
+
+#footer_social_media .footer_link:hover{
+  
+  opacity: 0.8;
+}
+
+#instagram{
+  background: linear-gradient(#7f37c9, #ff2992,#ff9807);
+}
+
+#facebook{
+  background: #4267b3;
+}
+
+#whatsapp{
+  background:#25d366;
+}
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  
+}
+
+.footer-list .footer_link{
+  color: var(--color-neutral-0);
+  transition: all 0.4s;
+}
+.footer-list h3{
+  color: #0e0c0c;
+}
+
+.footer-list h3:hover{
+  color:rgb(16, 107, 16) ;
+}
+
+.footer-list a{
+  color: black;
+}
+
+#footer_subscribe{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe {
+  color: black;
+}
+
+#input_group{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border-radius: 4px;
+}
+
+#input_group input{
+
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+
+}
+
+#input_group  button{
+  background-color: rgb(7, 104, 7);
+  border: none;
+  color: var(--color-neutral-40);
+  font-size: 1.125rem;
+  padding: 0px 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover{
+  opacity: 0.8;
+}
+
+#footer_copyright{
   display: flex;
   justify-content: center;
-  align-items: center;
+  color: #000;
+  border-top:1px solid black;
+  background-color: white;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+
 }
 
-.footer-header h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.contato {
-  margin-top: -30px;
-  font-size: 1.8em;
-}
-
-.footer-links {
-  margin-bottom: 10px;
-}
-
-.office-des {
-  display: block;
-  flex-direction: column;
-  text-align: center;
-}
-
-.office a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1rem;
-}
-
-.office a:hover {
-  color: #06230d;
-}
-
-.link-des {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.link-des a {
-  padding-top: 5%;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.link-des a:hover {
-  color: #8de6a2;
-  transition: linear 0.3s;
-}
-
-.ri-arrow-right-line {
-  margin-left: 0;
-}
-
-.icons a {
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 50%;
-  align-items: center;
-  font-size: 1.1rem;
-  margin: 2%;
-}
-
-.social-icon {
-  position: relative;
-  top: 2px;
-}
-
-.icons a:hover {
-  color: #fff;
-  background-color: #06230d;
-  border-color: #06230d;
-}
-
-.newsletter-des {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.icons {
-  display: flex;
-  gap: 10px;
-}
-
-
-.copyright-area {
-  width: 100%;
-  grid-column: 1/4;
-}
-
-.copyright-area p {
-  width: 100%;
-  grid-column: 1/4;
-  text-align: center;
-}
 
 @media (min-width: 768px) {
   .main {
