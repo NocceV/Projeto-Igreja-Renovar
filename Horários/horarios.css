@@ -8,6 +8,10 @@ body {
     background-color: rgb(150, 172, 150);
 }
 
+#main{
+    height: 20vh;
+}
+
 /*--------------------------- Nav Bar--------------------------------- */
 .links {
     color: black;
@@ -112,12 +116,15 @@ nav {
 .titulo-horario {
 
     padding-left: 100px;
+    padding-top: 50px;
 }
 
 /*------------------------------------------*/
 #tabela-horario {
     padding-left: 150px;
     padding-bottom: 85px;
+    padding-right: 150px;
+    padding-top: 60px;
 }
 /*------------------------------------------*/
 
@@ -139,6 +146,7 @@ tr {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: larger;
+    height: 50px;
 }
 
 
@@ -197,7 +205,7 @@ footer{
 
 }
 
-#footer_contacts h1{
+#footer_contacts h2{
     margin-bottom: 0.75em;
     color: #000;
 }
@@ -279,7 +287,6 @@ footer{
 #input_group{
     display: flex;
     align-items: center;
-    background-color: black;
     border-radius: 4px;
 }
 
@@ -293,14 +300,15 @@ footer{
 
 #input_group  button{
     background-color: rgb(7, 104, 7);
-    border: none;
+    border: 1px solid black;
     color: var(--color-neutral-40);
     font-size: 1.125rem;
     padding: 0px 1.125rem;
     height: 100%;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 2px 4px 4px 2px;
     cursor: pointer;
     transition: all 0.4s;
+    width: 70%;
 }
 
 #input_group button:hover{
@@ -321,7 +329,7 @@ footer{
 
 /*-----------------------Media Queries-----------------------*/
 
-@media (min-width: 200px) and (max-width: 320px) {
+@media (min-width: 200px) and (max-width: 349px) {
 
     nav {
         height: 15vh;
@@ -360,7 +368,7 @@ footer{
         width: 65px;
         height: 20px;
         padding: 2px;
-        font-size: medium;
+        font-size: small;
     }
 
     .titulo-horario {
@@ -403,7 +411,7 @@ footer{
 
 }
 
-@media (min-width: 321px) and (max-width: 519px) {
+@media (min-width: 350px) and (max-width: 589px) {
 
     nav {
         height: 15vh;
@@ -445,13 +453,14 @@ footer{
         width: 100%;
         height: auto;
         padding: 5px;
-        font-size: small;
+        font-size: medium;
         text-align: center;
     }
 
     .titulo-horario {
         padding-left: 0;
-        width: 20%;
+        width: 25%;
+
     }
 
     #tabela-horario {
@@ -480,7 +489,7 @@ footer{
 }
 
 
-@media (min-width: 520px) and (max-width: 920px) {
+@media (min-width: 590px) and (max-width: 920px) {
 
 
     .logo {
@@ -557,6 +566,26 @@ footer{
 
     
 
+}
+
+@media screen and (max-width:768px) {
+
+
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width:426px) {
+
+
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+    
 }
 
 
