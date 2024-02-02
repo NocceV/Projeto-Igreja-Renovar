@@ -253,3 +253,42 @@ footer{
     }
     
 }
+
+@media screen and (max-width: 768px) {
+    .flex-filho {
+        width: 90%; /* Ajustado para 90% em telas menores */
+    }
+    
+    .barra {
+        
+    }
+    
+    .image {
+        width: 30%; /* Largura total em telas menores */
+    }
+
+    .description {
+        width: 100%; /* Largura total em telas menores */
+        margin-left: 10; /* Removida a margem em telas menores */
+    }
+
+    .detalhes {
+        margin-left: 10; /* Removida a margem em telas menores */
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .image{
+        display: none;
+    }
+
+    .description{
+        margin-left: 0;
+    }
+
+    .detalhes{
+        list-style: none;
+    }
+
+}
