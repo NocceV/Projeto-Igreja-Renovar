@@ -36,8 +36,9 @@
     height: 80%;
     width: 30%;
     border: 2px solid black;
-    background-image: url(https://i.scdn.co/image/ab67616100005174f47255043b98873b2e85226e);
+    background-image: url(images/perfil.png);
     background-size: cover;
+    
 }
 
 .description {
@@ -259,8 +260,8 @@ footer{
         width: 90%; /* Ajustado para 90% em telas menores */
     }
     
-    .barra {
-        
+    .detalhes li{
+        margin-left: 10px;
     }
     
     .image {
